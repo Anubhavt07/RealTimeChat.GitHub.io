@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.4;
+    color: #4d4c4c;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+input {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px;
+    background: #20569c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: background .3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: #71abee;
+}
+
+button:disabled {
+    cursor: default;
+    background: #55cab794;
+}
+
+/* Chat Page Layout */
+
+.chat {
+    display: flex;
+}
+
+.sidebar {
+    height: 550px;
+    color: white;
+    background: #316a74;
+    width: 225px;
+    overflow-y: scroll;
+    margin-top: 30px;
+}
+.container
+{
+    border-radius: 7px;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin: 30px auto;
+    background-color: #0030cc;
+    border: 3px solid #19177a;
+}
+body h1{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+}
+body{
+    background-color: #44463c;
+}
+/* Chat styles */
+
+.chat__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 590px;
+}
+
+.chat__messages {
+    flex-grow: 1;
+    padding: 24px 24px 0 24px;
+    overflow: auto;
+    background-color: #6ac2d1;
+    margin-top: 30px;
+}
+
+/* Message Styles */
+
+.message {
+    margin-bottom: 16px;   
+ 
+}
+
+.message__name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 8px;
+  
+}
+
+.message__meta {
+    color: #777;
+    font-size: 14px;
+   
+}
+
+.message a {
+    color: #23bbe9;
+}
+
+
+/* Message Composition Styles */
+
+.msg-box {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    padding: 24px;
+}
+
+.msg-box form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.msg-box input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+    margin: 0 16px 0 0;
+    flex-grow: 1;
+}
+
+.msg-box button {
+    font-size: 14px;
+}
+
+/* Join Page Styles */
+
+.join-form {
+    background-image: linear-gradient(rgb(255,255,255),rgb(141, 194, 105));
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-form__box {
+    box-shadow: 0px 0px 17px 1px #1D1F26;
+    background: #F7F7FA;
+    padding: 24px;
+    width: 450px;
+    height: 400px;
+   border-radius: 4px;
+}
+
+.join-form button {
+    width: 100%;
+}
+
+.join-form input {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+    font-weight: 400;
+    font-size: 22px;
+    background: #79ab89;
+    color: #fff;
+    padding: 24px;   
+}
+
+.list-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+}
+
+.users {
+    list-style-type: none;
+    font-weight: 800;
+    padding: 12px 24px 0 24px;
+}
+
+@media (max-width: 700px) {
+    .join-form__box{
+        display: block;
+        background-color: #d36be0;
+    }
+}
